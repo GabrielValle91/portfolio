@@ -1,8 +1,6 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-
-const inter = Inter({ subsets: ['latin'] });
+import Header from './components/header';
 
 export const metadata: Metadata = {
   title: 'Gabriel Valle Portfolio v2',
@@ -17,7 +15,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={inter.className}>{children}</body>
+      <body className='mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0'>
+        <main className='lg:flex lg:justify-between lg:gap-4'>
+          <Header />
+          {children}
+        </main>
+      </body>
     </html>
   );
 }
