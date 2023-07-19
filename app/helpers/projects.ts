@@ -41,7 +41,8 @@ export const projects: IProject[] = [
     synopsis:
       'A React single page application that uses Redux for state management and React Router for navaigation. This web application allows a community to keep track of lost and found pets in an attempt to reunite them with their families. A Rails API is utilized for data storage and Devise provides user authentication.',
     technologies: [
-      'Ruby on Rails API',
+      'Ruby',
+      'Rails API',
       'Devise',
       'React',
       'Redux',
