@@ -15,9 +15,11 @@ export default function Home() {
         id='experience'
         className='mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24'
       >
-        {jobs.map((job: IJob) => {
-          return <JobListing {...job} />;
-        })}
+        <ol className='group/list'>
+          {jobs.map((job: IJob) => {
+            return <JobListing {...job} />;
+          })}
+        </ol>
       </section>
     </main>
   );
