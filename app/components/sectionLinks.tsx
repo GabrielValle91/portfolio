@@ -1,10 +1,7 @@
-'use client';
 import Link from 'next/link';
 import { links } from '../helpers/links';
-import { useState } from 'react';
 
 const SectionLinks = ({ visibleSection }: { visibleSection: string }) => {
-  const [currentSection, setCurrentSection] = useState('');
   const selectedClassLink: string =
     'nav-text text-xs font-bold uppercase tracking-widest text-slate-200';
   const unselectedClassLink: string =
@@ -22,11 +19,9 @@ const SectionLinks = ({ visibleSection }: { visibleSection: string }) => {
               <Link
                 className='group flex items-center py-3'
                 href={`${link.href}`}
-                onClick={() => setCurrentSection(link.href)}
               >
                 <span
                   className={
-                    // currentSection == link.href
                     link.href == visibleSection
                       ? selectedClassLine
                       : unselectedClassLine
@@ -34,7 +29,6 @@ const SectionLinks = ({ visibleSection }: { visibleSection: string }) => {
                 ></span>
                 <span
                   className={
-                    // currentSection == link.href
                     link.href == visibleSection
                       ? selectedClassLink
                       : unselectedClassLink

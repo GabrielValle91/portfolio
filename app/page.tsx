@@ -9,6 +9,6 @@ async function getData() {
 
 export default async function Home() {
   const data = await getData();
-  const articles = [data.items[0], data.items[1], data.items[2], data.items[3]];
+  const articles = data.items.slice(0, 5);
   return <Portfolio articles={articles} />;
 }
