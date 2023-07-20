@@ -4,7 +4,7 @@ import SectionLinks from './sectionLinks';
 
 const Header = ({ visibleSection }: { visibleSection: string }) => {
   return (
-    <header className='lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-2/5 lg:flex-col lg:justify-between lg:py-24'>
+    <header className='lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-2/4 lg:flex-col lg:justify-between lg:py-24'>
       <div>
         <h1 className='text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl'>
           <Link href='/'>Gabriel Valle</Link>

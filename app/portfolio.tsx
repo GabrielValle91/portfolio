@@ -12,30 +12,27 @@ import handleViewport, { type InjectedViewportProps } from 'react-in-viewport';
 import { useState } from 'react';
 
 const Block = (props: InjectedViewportProps<HTMLDivElement>) => {
-  const { inViewport, forwardedRef } = props;
-  // const color = inViewport ? '#217ac0' : '#ff9800';
-  // const text = inViewport ? 'In viewport' : 'Not in viewport';
-  return (
-    <div className='viewport-block' ref={forwardedRef}>
-      {/* <h3>{ text }</h3> */}
-      {/* <div style={{ width: '400px', height: '300px', background: color }} /> */}
-    </div>
-  );
+  const { forwardedRef } = props;
+
+  return <div className='viewport-block' ref={forwardedRef}></div>;
 };
 
-const ViewportBlock = handleViewport(Block /** options: {}, config: {} **/);
+const ViewportBlock = handleViewport(Block);
 
 const Portfolio = ({ articles }: { articles: IMediumArticle[] }) => {
   const [visibleSection, setVisibleSection] = useState('');
   return (
     <div className='lg:flex lg:justify-between lg:gap-4'>
       <Header visibleSection={visibleSection} />
-      <main className='pt-24 lg:w-3/5 lg:py-24'>
+      <main className='pt-24 lg:w-2/4 lg:py-24'>
         <section
           id='about'
           className='mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24'
         >
-          <ViewportBlock onEnterViewport={() => setVisibleSection('#about')} />
+          <ViewportBlock
+            onEnterViewport={() => setVisibleSection('#about')}
+            onLeaveViewport={() => setVisibleSection('#experience')}
+          />
           <AboutMe />
         </section>
         <section
