@@ -5,7 +5,7 @@ export default function Page() {
   return (
     <div className='lg:py-24'>
       <Link
-        className='group mb-2 inline-flex items-center font-semibold leading-tight text-teal-300'
+        className='group mb-2 inline-flex items-center font-semibold leading-tight text-cyan-300'
         href='/'
       >
         <svg
@@ -57,7 +57,7 @@ export default function Page() {
                   <div>
                     <div className='block sm:hidden'>
                       <Link
-                        className='inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 hover:text-slate-200 focus-visible:text-teal-300 sm:hidden group/link text-base'
+                        className='inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-cyan-300 focus-visible:text-cyan-300 hover:text-slate-200 focus-visible:text-cyan-300 sm:hidden group/link text-base'
                         href={`${project.demoUrl}`}
                         target='_blank'
                         rel='noreferrer'
@@ -97,7 +97,7 @@ export default function Page() {
                     {project.technologies.map((tech: string) => {
                       return (
                         <li className='my-1 mr-1.5'>
-                          <div className='flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 '>
+                          <div className='flex items-center rounded-full bg-cyan-400/10 px-3 py-1 text-xs font-medium leading-5 text-cyan-300 '>
                             {tech}
                           </div>
                         </li>
@@ -109,7 +109,7 @@ export default function Page() {
                   <ul className='translate-y-1'>
                     <li className='mb-1 flex items-center'>
                       <Link
-                        className='inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 text-sm text-slate-400 hover:text-slate-200 focus-visible:text-teal-300 group/link text-sm'
+                        className='inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-cyan-300 focus-visible:text-cyan-300 text-sm text-slate-400 hover:text-slate-200 focus-visible:text-cyan-300 group/link text-sm'
                         href={`${project.demoUrl}`}
                         target='_blank'
                         rel='noreferrer'

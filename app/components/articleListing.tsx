@@ -29,7 +29,7 @@ const ArticleListing = (article: IMediumArticle) => {
           <h3 className='font-medium leading-snug text-slate-200'>
             <div>
               <Link
-                className='inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base'
+                className='inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-cyan-300 focus-visible:text-cyan-300  group/link text-base'
                 href={guid || link}
                 target='_blank'
                 rel='noreferrer'
