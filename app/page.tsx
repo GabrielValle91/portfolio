@@ -156,12 +156,12 @@ export default async function Home() {
             </a>
             , deployed with{' '}
             <a
-              href='https://vercel.com/'
+              href='https://pages.github.com/'
               className='font-medium text-slate-400 hover:text-cyan-300 focus-visible:text-cyan-300'
               target='_blank'
               rel='noreferrer'
             >
-              Vercel
+              Github pages
             </a>
             .{' '}
           </p>
