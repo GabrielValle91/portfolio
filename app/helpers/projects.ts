@@ -117,8 +117,8 @@ export const projects: IProject[] = [
 ];
 
 export const showcaseProjects: IProject[] = [
-  projects[1],
+  projects[4],
   projects[0],
-  projects[2],
-  projects[3],
+  projects[5],
+  projects[6],
 ];
