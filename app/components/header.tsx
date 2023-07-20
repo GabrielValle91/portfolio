@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Socials from './socials';
 import SectionLinks from './sectionLinks';
 
-const Header = () => {
+const Header = ({ visibleSection }: { visibleSection: string }) => {
   return (
     <header className='lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-2/5 lg:flex-col lg:justify-between lg:py-24'>
       <div>
@@ -16,7 +16,7 @@ const Header = () => {
           I build accessible, inclusive products and digital experiences for the
           web.
         </p>
-        <SectionLinks />
+        <SectionLinks visibleSection={visibleSection} />
       </div>
       <Socials />
     </header>

@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { links } from '../helpers/links';
 import { useState } from 'react';
 
-const SectionLinks = () => {
+const SectionLinks = ({ visibleSection }: { visibleSection: string }) => {
   const [currentSection, setCurrentSection] = useState('');
   const selectedClassLink: string =
     'nav-text text-xs font-bold uppercase tracking-widest text-slate-200';
@@ -26,14 +26,16 @@ const SectionLinks = () => {
               >
                 <span
                   className={
-                    currentSection == link.href
+                    // currentSection == link.href
+                    link.href == visibleSection
                       ? selectedClassLine
                       : unselectedClassLine
                   }
                 ></span>
                 <span
                   className={
-                    currentSection == link.href
+                    // currentSection == link.href
+                    link.href == visibleSection
                       ? selectedClassLink
                       : unselectedClassLink
                   }
