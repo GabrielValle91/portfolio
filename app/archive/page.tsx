@@ -6,7 +6,7 @@ export default function Page() {
     <div className='lg:py-24'>
       <Link
         className='group mb-2 inline-flex items-center font-semibold leading-tight text-cyan-300'
-        href='/portfolio'
+        href='/'
       >
         <svg
           xmlns='http://www.w3.org/2000/svg'
