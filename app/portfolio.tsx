@@ -56,7 +56,7 @@ const Portfolio = ({ articles }: { articles: IMediumArticle[] }) => {
             <a
               className='inline-flex items-center font-medium leading-tight text-slate-200 font-semibold text-slate-200 group'
               aria-label='View Full Resume'
-              href='/resume.pdf'
+              href='/portfolio/resume.pdf'
             >
               <span>
                 <span className='border-b border-transparent pb-px transition group-hover:border-cyan-300 motion-reduce:transition-none'>
