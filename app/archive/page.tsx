@@ -47,100 +47,103 @@ export default function Page() {
           </tr>
         </thead>
         <tbody>
-          {projects.map((project: IProject) => {
-            return (
-              <tr className='border-b border-slate-300/10 last:border-none'>
-                <td className='py-4 pr-4 align-top text-sm'>
-                  <div className='translate-y-px'>{project.year}</div>
-                </td>
-                <td className='py-4 pr-4 align-top font-semibold leading-snug text-slate-200'>
-                  <div>
-                    <div className='block sm:hidden'>
-                      <Link
-                        className='inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-cyan-300 focus-visible:text-cyan-300 hover:text-slate-200 focus-visible:text-cyan-300 sm:hidden group/link text-base'
-                        href={`${project.demoUrl}`}
-                        target='_blank'
-                        rel='noreferrer'
-                        aria-label={`${project.title}`}
-                      >
-                        <span>
-                          {' '}
-                          <span className='inline-block'>
-                            {project.title}
-                            <svg
-                              xmlns='http://www.w3.org/2000/svg'
-                              viewBox='0 0 20 20'
-                              fill='currentColor'
-                              className='inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px'
-                              aria-hidden='true'
-                            >
-                              <path
-                                fillRule='evenodd'
-                                d='M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z'
-                                clipRule='evenodd'
-                              ></path>
-                            </svg>
+          {projects
+            .slice(0)
+            .reverse()
+            .map((project: IProject) => {
+              return (
+                <tr className='border-b border-slate-300/10 last:border-none'>
+                  <td className='py-4 pr-4 align-top text-sm'>
+                    <div className='translate-y-px'>{project.year}</div>
+                  </td>
+                  <td className='py-4 pr-4 align-top font-semibold leading-snug text-slate-200'>
+                    <div>
+                      <div className='block sm:hidden'>
+                        <Link
+                          className='inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-cyan-300 focus-visible:text-cyan-300 hover:text-slate-200 focus-visible:text-cyan-300 sm:hidden group/link text-base'
+                          href={`${project.demoUrl}`}
+                          target='_blank'
+                          rel='noreferrer'
+                          aria-label={`${project.title}`}
+                        >
+                          <span>
+                            {' '}
+                            <span className='inline-block'>
+                              {project.title}
+                              <svg
+                                xmlns='http://www.w3.org/2000/svg'
+                                viewBox='0 0 20 20'
+                                fill='currentColor'
+                                className='inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px'
+                                aria-hidden='true'
+                              >
+                                <path
+                                  fillRule='evenodd'
+                                  d='M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z'
+                                  clipRule='evenodd'
+                                ></path>
+                              </svg>
+                            </span>
                           </span>
-                        </span>
-                      </Link>
+                        </Link>
+                      </div>
+                      <div className='hidden sm:block'>{project.title}</div>
                     </div>
-                    <div className='hidden sm:block'>{project.title}</div>
-                  </div>
-                </td>
-                <td className='hidden py-4 pr-4 align-top text-sm lg:table-cell'>
-                  <div className='translate-y-px whitespace-nowrap'>
-                    {project.madeAt}
-                  </div>
-                </td>
-                <td className='hidden py-4 pr-4 align-top lg:table-cell'>
-                  <ul className='flex -translate-y-1.5 flex-wrap'>
-                    {project.technologies.map((tech: string) => {
-                      return (
-                        <li className='my-1 mr-1.5'>
-                          <div className='flex items-center rounded-full bg-cyan-400/10 px-3 py-1 text-xs font-medium leading-5 text-cyan-300 '>
-                            {tech}
-                          </div>
-                        </li>
-                      );
-                    })}
-                  </ul>
-                </td>
-                <td className='hidden py-4 align-top sm:table-cell'>
-                  <ul className='translate-y-1'>
-                    <li className='mb-1 flex items-center'>
-                      <Link
-                        className='inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-cyan-300 focus-visible:text-cyan-300 text-sm text-slate-400 hover:text-slate-200 focus-visible:text-cyan-300 group/link text-sm'
-                        href={`${project.demoUrl}`}
-                        target='_blank'
-                        rel='noreferrer'
-                        aria-label='apps.apple.com'
-                      >
-                        <span>
-                          {' '}
-                          <span className='inline-block'>
-                            {project.demoUrl}
-                            <svg
-                              xmlns='http://www.w3.org/2000/svg'
-                              viewBox='0 0 20 20'
-                              fill='currentColor'
-                              className='inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-0.5'
-                              aria-hidden='true'
-                            >
-                              <path
-                                fillRule='evenodd'
-                                d='M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z'
-                                clipRule='evenodd'
-                              ></path>
-                            </svg>
+                  </td>
+                  <td className='hidden py-4 pr-4 align-top text-sm lg:table-cell'>
+                    <div className='translate-y-px whitespace-nowrap'>
+                      {project.madeAt}
+                    </div>
+                  </td>
+                  <td className='hidden py-4 pr-4 align-top lg:table-cell'>
+                    <ul className='flex -translate-y-1.5 flex-wrap'>
+                      {project.technologies.map((tech: string) => {
+                        return (
+                          <li className='my-1 mr-1.5'>
+                            <div className='flex items-center rounded-full bg-cyan-400/10 px-3 py-1 text-xs font-medium leading-5 text-cyan-300 '>
+                              {tech}
+                            </div>
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  </td>
+                  <td className='hidden py-4 align-top sm:table-cell'>
+                    <ul className='translate-y-1'>
+                      <li className='mb-1 flex items-center'>
+                        <Link
+                          className='inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-cyan-300 focus-visible:text-cyan-300 text-sm text-slate-400 hover:text-slate-200 focus-visible:text-cyan-300 group/link text-sm'
+                          href={`${project.demoUrl || project.codeUrl}`}
+                          target='_blank'
+                          rel='noreferrer'
+                          aria-label='apps.apple.com'
+                        >
+                          <span>
+                            {' '}
+                            <span className='inline-block'>
+                              {project.demoUrl || project.codeUrl}
+                              <svg
+                                xmlns='http://www.w3.org/2000/svg'
+                                viewBox='0 0 20 20'
+                                fill='currentColor'
+                                className='inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-0.5'
+                                aria-hidden='true'
+                              >
+                                <path
+                                  fillRule='evenodd'
+                                  d='M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z'
+                                  clipRule='evenodd'
+                                ></path>
+                              </svg>
+                            </span>
                           </span>
-                        </span>
-                      </Link>
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-            );
-          })}
+                        </Link>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+              );
+            })}
         </tbody>
       </table>
     </div>
