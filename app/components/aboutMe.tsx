@@ -7,18 +7,14 @@ const AboutMe = () => {
         </h2>
       </div>
       <div>
-        Data Analyst and Software Engineer with a passion for creating
-        innovative solutions that improve work environments.
-        <br />
-        <br />
-        While using using Excel, Power Bi, and a background in Mathematics to
-        provide insights into departmental performance, I expanded my toolkit to
-        software development, including Ruby on Rails, JavaScript, React, and
-        NodeJS, when I recognized a need for effective software at my workplace.
-        <br />
-        <br />I bring strong skills in problem solving and analytics that help
-        companies exceed goals while cutting costs. I’m a lifelong learner and
-        avid gamer.
+        Passionate Data Analyst and Software Engineer with a strong background
+        in Mathematics and a track record of driving operational efficiency and
+        business success. Skilled in using Excel, Power BI, and various
+        programming tools such as Ruby on Rails, JavaScript, React, and NodeJS
+        to deliver innovative solutions. Excels in problem-solving and
+        data-driven decision-making. Eager to contribute expertise in creating
+        data-driven insights and robust software solutions to optimize work
+        environments.
       </div>
     </>
   );
