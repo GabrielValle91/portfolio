@@ -4,7 +4,7 @@ import { projects, IProject } from '../helpers/projects';
 export default function Page() {
   return (
     <div className='lg:py-24'>
-      <Link
+      <a
         className='group mb-2 inline-flex items-center font-semibold leading-tight text-cyan-300'
         href='/'
       >
@@ -22,7 +22,7 @@ export default function Page() {
           ></path>
         </svg>
         Gabriel Valle
-      </Link>
+      </a>
       <h1 className='text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl'>
         All Projects
       </h1>
