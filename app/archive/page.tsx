@@ -1,12 +1,15 @@
+'use client';
 import Link from 'next/link';
 import { projects, IProject } from '../helpers/projects';
+import { useRouter } from 'next/navigation';
 
 export default function Page() {
+  const router = useRouter();
   return (
     <div className='lg:py-24'>
-      <Link
+      <button
         className='group mb-2 inline-flex items-center font-semibold leading-tight text-cyan-300'
-        href='/'
+        onClick={() => router.back()}
       >
         <svg
           xmlns='http://www.w3.org/2000/svg'
@@ -22,7 +25,7 @@ export default function Page() {
           ></path>
         </svg>
         Gabriel Valle
-      </Link>
+      </button>
       <h1 className='text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl'>
         All Projects
       </h1>
