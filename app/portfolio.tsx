@@ -53,7 +53,7 @@ const Portfolio = ({ articles }: { articles: IMediumArticle[] }) => {
             })}
           </ol>
           <div className='mt-12'>
-            <Link
+            <a
               className='inline-flex items-center font-medium leading-tight text-slate-200 font-semibold text-slate-200 group'
               aria-label='View Full Resume'
               href='/resume.pdf'
@@ -81,7 +81,7 @@ const Portfolio = ({ articles }: { articles: IMediumArticle[] }) => {
                   </svg>
                 </span>
               </span>
-            </Link>
+            </a>
           </div>
         </section>
         <section
