@@ -14,7 +14,7 @@ const Header = ({ visibleSection }: { visibleSection: string }) => {
         </h2>
         <p className='mt-4 max-w-xs leading-normal'>
           I build data dashboards, tools, and software that provide deep
-          insights and enchance user experience.
+          insights and enhance user experience.
         </p>
         <SectionLinks visibleSection={visibleSection} />
       </div>
