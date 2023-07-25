@@ -14,7 +14,7 @@ export const jobs: IJob[] = [
     company: 'AIT Worldwide / Spur Freight',
     companyUrl: 'https://www.aitworldwide.com/',
     synopsis:
-      'Designed and implemented custom solutions for multi-team data gathering and metric reporting, leading to a 35% improvement in data accuracy and a 60% reduction in report generation time. Migrated the DC team to a new billing platform without loss of transparency or functionality, resulting in a seamless transition for 30+ clients. Engineered a tool to handle annual client emailing and rate increases, streamlining the process and saving 50+ hours of manual work per year. Created PowerBI reports to provide deep insight into daily, quarterly and annual finances and operations that assisted in company buyout.',
+      'Designed and implemented custom solutions for multi-team data gathering and metric reporting, leading to a 35% improvement in data accuracy and a 60% reduction in report generation time. Created PowerBI reports to provide deep insight into daily, quarterly and annual finances and operations that assisted in company buyout.',
     skills: ['Data Analysis', 'DAX', 'Excel', 'Power Bi', 'SQL', 'VBA'],
     startDate: '2021',
     endDate: '2022',
@@ -24,7 +24,7 @@ export const jobs: IJob[] = [
     company: 'KazooHr',
     companyUrl: 'https://www.worktango.com/',
     synopsis:
-      "Implemented an overhaul of the customer-facing platform, focusing on UX and functionality. Leveraged React and Rails, resulting in a visually appealing and highly intuitive interface. Spearheaded the seamless integration of a robust GraphQL API with the new React frontend and multiple internal company applications, significantly enhancing data retrieval efficiency. Composed maintainable, extensible, performance-minded code that integrated the company's flagship Performance Management (HighGround) and Rewards & Recognition (YouEarnedIt) products.",
+      'Implemented an overhaul of the customer-facing platform, focusing on UX and functionality. Leveraged React and Rails, resulting in a visually appealing and highly intuitive interface. Spearheaded the seamless integration of a robust GraphQL API with the new React frontend and multiple internal company applications, significantly enhancing data retrieval efficiency. ',
     skills: [
       'GraphQL',
       'Javascript',
@@ -71,7 +71,7 @@ export const jobs: IJob[] = [
     company: 'Intelligent Logistics',
     companyUrl: 'www.intelligentlogistics.com',
     synopsis:
-      'Led end-to-end management of the inventory system, including order creation and monitoring of inventory levels, and client communication, resulting in streamlined operations and uninterrupted client satisfaction. Engineered a sophisticated Excel tool to execute precise billing calculations, which expedited the billing process and improved accuracy, leading to increased cost savings and heightened client trust. Designed new processes for billing operations encompassing both warehouse and cartage departments, resulting in dramatically increased accuracy and efficiency, saving 10+ hours of manual work a week.',
+      'Led end-to-end management of the inventory system, including order creation and monitoring of inventory levels, and client communication, resulting in streamlined operations and uninterrupted client satisfaction. Engineered a sophisticated Excel tool to execute precise billing calculations, which expedited the billing process and improved accuracy, leading to increased cost savings and heightened client trust.',
     skills: ['Data Analysis', 'Excel', 'VBA'],
     startDate: '2016',
     endDate: '2017',
