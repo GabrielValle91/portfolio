@@ -11,10 +11,10 @@ export interface IJob {
 export const jobs: IJob[] = [
   {
     title: 'Data Engineer Consultant',
-    company: 'AIT Worldwide / Spur Freight',
+    company: 'AIT Worldwide / Intelligent Logistics',
     companyUrl: 'https://www.aitworldwide.com/',
     synopsis:
-      'Designed and implemented custom solutions for multi-team data gathering and metric reporting, leading to a 35% improvement in data accuracy and a 60% reduction in report generation time. Created PowerBI reports to provide deep insight into daily, quarterly and annual finances and operations that assisted in company buyout.',
+      'Designed and implemented custom solutions for multi-team data gathering and metric reporting, leading to a 35% improvement in data accuracy and a 60% reduction in report generation time. Developed high-impact PowerBI reports, unlocking deep insight into daily, quarterly and annual financial and operational metrics that played a role in facilitating the company’s buyout.',
     skills: ['Data Analysis', 'DAX', 'Excel', 'Power Bi', 'SQL', 'VBA'],
     startDate: '2021',
     endDate: '2022',
