@@ -13,8 +13,8 @@ const Header = ({ visibleSection }: { visibleSection: string }) => {
           Data Analyst and Software Engineer
         </h2>
         <p className='mt-4 max-w-xs leading-normal'>
-          I build data dashboards, tools, and software that provide deep
-          insights and enhance user experience.
+          I craft dynamic data dashboards, tools, and software that offers
+          profound insights and enhances user experience.
         </p>
         <SectionLinks visibleSection={visibleSection} />
       </div>
