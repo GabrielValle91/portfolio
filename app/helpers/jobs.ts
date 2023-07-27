@@ -24,7 +24,7 @@ export const jobs: IJob[] = [
     company: 'KazooHr',
     companyUrl: 'https://www.worktango.com/',
     synopsis:
-      'Enacted an overhaul of the customer-facing platform, focusing on UX and functionality, leveraging React and Rails, resulting in a visually appealing and highly intuitive interface. Spearheaded the seamless integration of a robust GraphQL API with the new React frontend and multiple internal company applications, significantly enhancing data retrieval efficiency. ',
+      'Enacted an overhaul of the customer-facing platform, focusing on UI/UX and functionality, leveraging React and Rails, resulting in a visually appealing and highly intuitive interface. Spearheaded the seamless integration of a robust GraphQL API with the new React frontend and multiple internal company applications, significantly enhancing data retrieval efficiency. ',
     skills: [
       'GraphQL',
       'Javascript',
