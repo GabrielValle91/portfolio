@@ -14,7 +14,7 @@ export const jobs: IJob[] = [
     company: 'AIT Worldwide / Intelligent Logistics',
     companyUrl: 'https://www.aitworldwide.com/',
     synopsis:
-      'Innovated and deployed custom solutions for multi-team data gathering and metric reporting, leading to a 35% improvement in data accuracy and a 60% reduction in report generation time. Developed high-impact Power BI reports, unlocking insight into daily, quarterly and annual financial and operational metrics that played a role in facilitating the company’s buyout.',
+      'Innovated and deployed custom solutions for multi-team data gathering and metric reporting, leading to a 35% improvement in data accuracy and a 60% reduction in report generation time. Developed high-impact Power BI reports, unlocking insight into daily, quarterly and annual financial and operational metrics that played a role in facilitating the company’s acquisition.',
     skills: ['Data Analysis', 'DAX', 'Excel', 'Power Bi', 'SQL', 'VBA'],
     startDate: '2021',
     endDate: '2022',
